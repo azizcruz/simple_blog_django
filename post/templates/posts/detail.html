@@ -1,0 +1,17 @@
+{% extends 'posts/layout.html' %}
+{% block content %}
+<h1>Post Details</h1>
+<div class="card">
+  <div class="card-image">
+    <img src="{{ post.image.url }}" alt="Post Image">
+  </div>
+
+  <div class="card-body">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.content | safe}}</p>
+  </div>
+  <div style="margin:10px">
+      <a href="{% url 'blog:edit_post' post.id %}" class="btn btn-add">Edit post</a>
+  </div>
+</div>
+{%  endblock %}

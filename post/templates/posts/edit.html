@@ -1,0 +1,12 @@
+{% extends 'posts/layout.html' %}
+{% block content %}
+<h1>Create Post</h1>
+
+<form method='post' enctype='multipart/form-data'>
+{% csrf_token %}
+{{ form.media }}
+{{ form }}
+
+<button type='submit'>Save Post</button>
+</form>
+{%  endblock %}

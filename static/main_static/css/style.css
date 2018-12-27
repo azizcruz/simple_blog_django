@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+input, textarea, button {
+  background-color: #FFF;
+  color: #000;
+  resize: none;
+  padding: 10px
+}
+
+button {
+  max-width: 100px;
+  margin-top: 10px
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  margin-bottom: 10px
+}
+
+.card-image {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+hr {
+  height: .5px;
+  background-color: #555;
+  margin: 10px 10px 0 10px
+}
+
+.card-image img {
+  max-width: 100%;
+}
+
+.card-body {
+  padding: 10px;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.btn {
+  padding: 7px;
+  border: 1px solid #000;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn.btn-add:active .submit-btn {
+  position: relative;
+  top: 20px;
+}
+
+.brand-logo {
+  text-align: center;
+  background-color: #EEE;
+  padding: 10px;
+  display: inline-block;
+}
+
+.brand-logo a {
+  text-decoration: none;
+  color: #000;
+}
+
+#cke_id_content {
+  width: 100% !important;
+}
+
+.messages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.messages .success {
+  background-color: green;
+  color: #FFF;
+  padding: 10px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+}
